@@ -1,9 +1,28 @@
-# Vertical Farming AI
+# 🌱 Vertical Farming AI  
+A lightweight, local AI system designed for **smart vertical farming**, capable of predicting plant health from sensor readings and exposing the model through a **FastAPI** service for IoT devices and controllers.
 
-Small, local AI platform for a vertical farming prototype:
-- A simple sensor-based classifier that predicts plant health (`healthy` / `stressed`) from basic sensor readings (temperature, humidity, light hours, EC, pH).
-- FastAPI service (`/predict`) that serves the model for local network access (sensors or controllers can POST JSON and get a response).
-- Designed to be run locally for prototyping and on an edge device (Raspberry Pi) for field usage.
+---
 
-## Repo structure
+# 🚀 Features
+
+### ✅ Machine Learning Model  
+- Classifies plant status as **healthy** or **stressed**  
+- Uses simple sensor readings:  
+  - Temperature  
+  - Humidity  
+  - Light hours  
+  - EC (nutrient concentration)  
+  - pH  
+
+### ✅ FastAPI Backend  
+- `/predict` endpoint returns health prediction + probabilities  
+- Accessible from controllers (ESP32, Raspberry Pi, PC, sensors)
+
+### ✅ Local & Edge Deployment  
+- Works on Windows, Linux, Raspberry Pi  
+- Very lightweight (scikit-learn + FastAPI)
+
+---
+
+# 📁 Directory Structure
 
